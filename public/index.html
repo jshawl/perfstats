@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      ;(function(){
+        var img = document.createElement("img"); 
+	var q = '?';
+	for ( key in window.performance.timing ){
+	  q += key + "=" + window.performance.timing[key] + "&";
+	}
+	img.src = "http://localhost:4567/__.gif" + q;
+	document.body.appendChild( img );
+	document.body.removeChild( img );
+      })();
+    </script>
+  </body>
+</html>
